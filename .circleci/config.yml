@@ -14,6 +14,12 @@ jobs:
           paths:
             - "node_modules"
       - run: echo 'si'
+      - run: sonar-scanner \
+          -Dsonar.organization=sebastianjordan \
+          -Dsonar.projectKey=SebastianJordan_ionic-ci-sonnar \
+          -Dsonar.sources=. \
+          -Dsonar.host.url=https://sonarcloud.io \
+          -Dsonar.login=9c477ecad05a0684ac27675a8c193dc69961fcbd
 #       - sonarcloud/scan
 # orbs:
 #   sonarcloud: sonarsource/sonarcloud@1.0.1
