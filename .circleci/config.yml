@@ -14,12 +14,12 @@ jobs:
           paths:
             - "node_modules"
       - run: echo 'si'
-      - sonarcloud/scan
-orbs:
-  sonarcloud: sonarsource/sonarcloud@1.0.1
+#       - sonarcloud/scan
+# orbs:
+#   sonarcloud: sonarsource/sonarcloud@1.0.1
 
-workflows:
-  main:
-    jobs:
-      - build:
-          context: SonarCloud
+# workflows:
+#   main:
+#     jobs:
+#       - build:
+#           context: SonarCloud
